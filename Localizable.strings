@@ -9579,6 +9579,9 @@ eg. "Super Following Jack" */
 /* Title for why you're seeing this post web page. */
 "TWEET_PROMOTE_WYSTP_INFO_WEB_VIEW_TITLE" = "Why this post";
 
+/* Title for the confirmation alert shown when the user taps Retake on the video reaction preview screen. The alert presents Cancel and Discard buttons and clears all recorded clips if confirmed. */
+"TWEET_REACTION_DISCARD_ALL_CLIPS_ALERT_TITLE" = "Discard all clips?";
+
 /* Title for the confirmation alert shown when the user taps undo to remove the last recorded clip in the video reaction camera. The alert presents Cancel and Discard buttons. */
 "TWEET_REACTION_DISCARD_LAST_CLIP_ALERT_TITLE" = "Discard the last clip?";
 
@@ -13040,6 +13043,9 @@ eg. "Super Following Jack" */
 
 /* DM message action Retry title */
 "DM_MESSAGE_ACTION_RETRY_TITLE" = "Retry";
+
+/* Label for the action that exports a file attachment to the Files app from the DM message action menu. */
+"DM_MESSAGE_ACTION_SAVE_FILE_TITLE" = "Save File";
 
 /* DM message action Save GIF title */
 "DM_MESSAGE_ACTION_SAVE_GIF_TITLE" = "Save GIF";
