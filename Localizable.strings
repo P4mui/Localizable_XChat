@@ -56,6 +56,9 @@ This file is sorted by modules instead of alphabetically to help reduce merge co
 
 // Section: Frameworks/XDesignSystem/Sources/XDesignSystemStrings/en.lproj/Localizable.strings
 
+/* Accessibility label for an XDSButton whose content is a loading spinner. */
+"XDS_BUTTON_LOADING_ACCESSIBILITY_LABEL" = "Loading";
+
 /* Accessibility label for the XDS Tray header back button. */
 "XDS_TRAY_BACK_BUTTON_ACCESSIBILITY_LABEL" = "Back";
 
@@ -2907,6 +2910,9 @@ This text is the accessibility hint for the button that lets the user change the
 
 /* Label for edit profile button in Profiles.  Should be approx 17 characters or shorter */
 "EDIT_PROFILE_BUTTON_LABEL" = "Edit profile";
+
+/* Label for the edit-profile button in the redesigned profile header action row. */
+"EDIT_PROFILE_BUTTON_LABEL_V2" = "Edit Profile";
 
 /* Format for error message to show when edit profile field input exceeds the max length. */
 "EDIT_PROFILE_FORM_FIELD_MAX_LENGTH_FORMAT" = "Must be %d characters or fewer.";
@@ -7333,6 +7339,9 @@ This text is the accessibility hint for the button that lets the user change the
 /* Label for button the shows the setup profile flow (what new users see instead of “Edit profile”). */
 "SETUP_PROFILE_BUTTON_LABEL" = "Set up profile";
 
+/* Label for the setup-profile button in the redesigned profile header action row. */
+"SETUP_PROFILE_BUTTON_LABEL_V2" = "Set Up";
+
 /* Label for tooltip prompt shown when new users arrive on the profile */
 "SETUP_PROFILE_PROMPT_LABEL" = "Your posts will show up here, but let’s set up your profile first.";
 
@@ -7349,7 +7358,7 @@ This text is the accessibility hint for the button that lets the user change the
 "SHARE_BUTTON_ACCESSIBILITY_HINT" = "Double-tap to share";
 
 /* Label for the share-profile button in the redesigned profile header action row. */
-"SHARE_PROFILE_BUTTON_LABEL" = "Share profile";
+"SHARE_PROFILE_BUTTON_LABEL" = "Share Profile";
 
 /* Footer text on the profile share card */
 "SHARE_PROFILE_CARD_FOOTER_LABEL" = "Join me on";
@@ -7713,12 +7722,6 @@ This text is the accessibility hint for the button that lets the user change the
 
 /* Action label text in the post action menu that encourages users to edit their post with a Premium subscription */
 "SUBSCRIPTION_MARKETING_EDIT_TWEET_UPSELL_ACTION_LABEL" = "Edit with Premium";
-
-/* Longer description of the setting that allows users to hide their likes tab. */
-"SUBSCRIPTION_PREMIUM_HIDE_LIKES_SETTING_DETAIL" = "Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.";
-
-/* Title of the setting that allows users to hide their likes tab. */
-"SUBSCRIPTION_PREMIUM_HIDE_LIKES_SETTING_TITLE" = "Hide Likes tab";
 
 /* Longer description of the setting that allows users to hide their subscriptions tab. */
 "SUBSCRIPTION_PREMIUM_HIDE_SUBSCRIPTIONS_SETTING_DETAIL" = "Your list of Subscriptions on your profile will only be visible to you.";
@@ -18663,6 +18666,9 @@ Example of a valid translation: In German, using "Mio" (3 characters) would resu
    Notifications settings button title */
 "NOTIFICATIONS_LABEL" = "Notifications";
 
+/* Caption shown in the layer behind the system notification permission prompt. The “follow you” phrase is emphasized in bold using Markdown. */
+"NOTIFICATIONS_NUDGE_CAPTION" = "Get notified when friends **follow you**";
+
 /* Accessibility hint for the back button */
 "NOTIFICATIONS_PERMISSION_REQUEST_BACK_BUTTON_ACCESSIBILITY_HINT" = "Returns to previous screen";
 
@@ -21671,6 +21677,12 @@ Example of a valid translation: In German, using "Mio" (3 characters) would resu
 /* Message text sent accessibility label including sender. %@: message text */
 "DM_MESSAGE_TEXT_SENT_WITH_SENDER_ACCESSIBILITY_LABEL" = "You: %@";
 
+/* Status shown on a money card when the payment has completed */
+"DM_MONEY_CARD_STATUS_COMPLETED" = "Completed";
+
+/* Status shown on a money card while the payment is still being sent */
+"DM_MONEY_CARD_STATUS_PENDING" = "Pending";
+
 /* DM network error title */
 "DM_NETWORK_ERROR_TITLE" = "Something went wrong. Check your connection and try again.";
 
@@ -23377,21 +23389,13 @@ eg. "- @jack" */
 /* Title for label indicating that the card is showing content that is new to the app */
 "UPSELL_CARD_NEW_LABEL" = "New";
 
-// Section: Frameworks/XGifPicker/Sources/XGifPickerStrings/en.lproj/Localizable.strings
-
-/* Gif Picker error action retry title */
-"GIF_PICKER_ERROR_ACTION_RETRY_TITLE" = "Retry";
-
-/* Gif Picker error title */
-"GIF_PICKER_ERROR_TITLE" = "Something went wrong. Check your connection and try again.";
-
-/* Gif Picker search placeholder */
-"GIF_PICKER_SEARCH_PLACEHOLDER" = "Search GIFs";
-
-/* Gif Picker title */
-"GIF_PICKER_TITLE" = "Choose GIF";
-
 // Section: Frameworks/TwitterSelfServeAds/Sources/TwitterSelfServeAdsStrings/en.lproj/Localizable.strings
+
+/* Secondary action button shown alongside Confirm in the X Money payment confirmation step on the Boost sheet. Tapping it returns to the Boost Post button. */
+"BOOST_SHEET_CANCEL_PAYMENT_BUTTON" = "Cancel";
+
+/* Primary action button shown after tapping Boost Post when paying with X Money. X Money has no native payment confirmation dialog, so this button confirms the payment before the boost is submitted. */
+"BOOST_SHEET_CONFIRM_PAYMENT_BUTTON" = "Confirm";
 
 /* Label of the action-text picker row in the CTA editor sub-sheet. Tapping opens a drill-in selector. */
 "BOOST_SHEET_CTA_ACTION_LABEL" = "Label";
@@ -23610,10 +23614,10 @@ eg. "- @jack" */
 "QUICK_PROMOTE_PROMPT_PRIMARY_BUTTON_TITLE_BOOST" = "Boost visibility now";
 
 /* Primary button title of half-sheet prompt which shows when going to an eligible post */
-"QUICK_PROMOTE_PROMPT_PRIMARY_BUTTON_TITLE_PROMOTE" = "Promote now";
+"QUICK_PROMOTE_PROMPT_PRIMARY_BUTTON_TITLE_PROMOTE" = "Boost now";
 
 /* Secondary button title of half-sheet prompt which shows when going to an eligible post */
-"QUICK_PROMOTE_PROMPT_SECONDARY_BUTTON_TITLE" = "Maybe Later";
+"QUICK_PROMOTE_PROMPT_SECONDARY_BUTTON_TITLE" = "Maybe later";
 
 /* Title of half-sheet prompt which shows when going to an eligible post */
 "QUICK_PROMOTE_PROMPT_TITLE_BOOST_POST" = "Boost your post now for more visibility?";
@@ -24652,6 +24656,20 @@ eg. "- @jack" */
 /* Button text that shows post content when tapped */
 "SAFETY_CENTER_TWEET_DISCLOSURE_SHOW_BUTTON_TITLE" = "Show";
 
+// Section: Frameworks/XGif/Sources/XGifPickerStrings/en.lproj/Localizable.strings
+
+/* Gif Picker error action retry title */
+"GIF_PICKER_ERROR_ACTION_RETRY_TITLE" = "Retry";
+
+/* Gif Picker error title */
+"GIF_PICKER_ERROR_TITLE" = "Something went wrong. Check your connection and try again.";
+
+/* Gif Picker search placeholder */
+"GIF_PICKER_SEARCH_PLACEHOLDER" = "Search GIFs";
+
+/* Gif Picker title */
+"GIF_PICKER_TITLE" = "Choose GIF";
+
 // Section: Frameworks/SuperAwesomeVideoCache/Sources/SuperAwesomeVideoCacheStrings/en.lproj/Localizable.strings
 
 /* Title of a toast which is show on an event of error during a video download */
@@ -24862,6 +24880,9 @@ eg. "- @jack" */
 
 // Section: Frameworks/XPhotoEditor/XPhotoEditor/Sources/XPhotoEditor/en.lproj/Localizable.strings
 
+/* Navigation title shown while the blur tool is active */
+"XPHOTOEDITOR_BLUR_TITLE" = "Add Blur";
+
 /* Display name for the blur brush mode */
 "XPHOTOEDITOR_BRUSH_MODE_BLUR" = "Blur";
 
@@ -24897,6 +24918,9 @@ eg. "- @jack" */
 
 /* Title for the alert shown when the user taps cancel with unsaved changes */
 "XPHOTOEDITOR_DISCARD_CHANGES_ALERT_TITLE" = "Discard Changes?";
+
+/* Navigation title shown while the filters tool is active */
+"XPHOTOEDITOR_FILTERS_TITLE" = "Add Filter";
 
 /* Accessibility label for the Edit with Grok button */
 "XPHOTOEDITOR_GROK_BUTTON_ACCESSIBILITY_LABEL" = "Edit with Grok";
@@ -24936,6 +24960,9 @@ eg. "- @jack" */
 
 /* Accessibility label for the text tool toolbar button */
 "XPHOTOEDITOR_TEXT_TOOL_ACCESSIBILITY_LABEL" = "Text";
+
+/* Navigation title shown while the text tool is active */
+"XPHOTOEDITOR_TEXT_TOOL_TITLE" = "Add Text";
 
 // Section: Frameworks/XVideoRecorder/Sources/XVideoRecorderStrings/en.lproj/Localizable.strings
 
@@ -24978,20 +25005,11 @@ eg. "- @jack" */
 /* Title for the confirmation alert shown when the user taps retake to discard a photo they just captured in the video recorder. The alert presents Cancel and Discard buttons. */
 "NEWSCAMERA_RECORDER_DISCARD_PHOTO_ALERT_TITLE" = "Discard photo?";
 
-/* Label in the video recorder's duration selector for a maximum recording length of 10 minutes, abbreviated. The "m" stands for minutes. Keep it short. */
-"NEWSCAMERA_RECORDER_DURATION_10M" = "10m";
-
-/* Label in the video recorder's duration selector for a maximum recording length of 15 seconds, abbreviated. The "s" stands for seconds. Keep it short. */
-"NEWSCAMERA_RECORDER_DURATION_15S" = "15s";
-
-/* Label in the video recorder's duration selector for a maximum recording length of 30 minutes, abbreviated. The "m" stands for minutes. Keep it short. */
-"NEWSCAMERA_RECORDER_DURATION_30M" = "30m";
-
-/* Label in the video recorder's duration selector for a maximum recording length of 60 seconds, abbreviated. The "s" stands for seconds. Keep it short. */
-"NEWSCAMERA_RECORDER_DURATION_60S" = "60s";
-
-/* Label in the video recorder's capture mode selector for switching to photo capture, shown to the right of the recording duration options. Displayed in all caps to match the design. Keep it short. */
+/* Label in the video recorder's capture mode selector for switching to photo capture, shown to the right of the video option. Displayed in all caps to match the design. Keep it short. */
 "NEWSCAMERA_RECORDER_MODE_PHOTO" = "PHOTO";
+
+/* Label in the video recorder's capture mode selector for switching to video capture, shown to the left of the photo option. Displayed in all caps to match the design. Keep it short. */
+"NEWSCAMERA_RECORDER_MODE_VIDEO" = "VIDEO";
 
 /* Label shown at the bottom of the video recorder indicating that the captured media will be shared as a post. Displayed in all caps to match the design. Keep it short. */
 "NEWSCAMERA_RECORDER_POST_LABEL" = "POST";
